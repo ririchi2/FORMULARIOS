@@ -12,7 +12,9 @@ header {
 .formSection {
     border-right: 2px solid black;
     width: 50%;
-    margin: 10px 20px 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 form {
