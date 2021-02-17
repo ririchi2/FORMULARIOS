@@ -9,6 +9,19 @@ header {
     text-align: center;
 }
 
+.formSection {
+    border-right: 2px solid black;
+    width: 50%;
+    margin: 10px 20px 10px 20px;
+}
+
+form {
+    border: 1px solid black;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
+}
+
 h3 {
     text-decoration: underline;
 }
