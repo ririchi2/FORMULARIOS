@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+header {
+    background-color: #666666;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+.group {
+    display: inline-block;
+}
