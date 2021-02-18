@@ -9,8 +9,19 @@ header {
     text-align: center;
 }
 
+main {
+    display: flex;
+}
+
 .formSection {
     border-right: 2px solid black;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.resultSection {
     width: 50%;
     margin-left: 10px;
     margin-right: 10px;
@@ -24,9 +35,11 @@ form {
     padding: 10px;
 }
 
-h3 {
-    text-decoration: underline;
-}
 .group {
     display: inline-block;
+}
+
+.underline {
+    width: 100%;
+    border-bottom: 2px solid black;
 }

@@ -16,80 +16,98 @@
             <form action="">
                 <div>
                     <h3>Datos Usuario</h3>
+                    <div class="underline"></div>
                     <div class="group">
                         <label for="">Nombre de Usuario</label> <br>
-                        <input type="text" placeholder="UserName">
+                        <input type="text" placeholder="UserName" id="userName">
                     </div>
                     <div class="group">
                         <label for="">Contraseña</label> <br>
-                        <input type="text" placeholder="Introduce Contraseña">
+                        <input type="text" placeholder="Introduce Contraseña" id="pwd">
                     </div>
                     <br>
-                    <input type="checkbox" name="" id="">Mostrar contraseña
+                    <input type="checkbox" name="" id="showPwd">Mostrar contraseña
                 </div>
 
                 <div>
                     <h3>Datos Personales</h3>
+                    <div class="underline"></div>
                     <div class="group">
                         <label for="">Nombre</label> <br>
-                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Nombre" id="name">
                     </div>
                     <div class="group">
                         <label for="">Apellidos</label> <br>
-                        <input type="text" placeholder="Apellidos">
+                        <input type="text" placeholder="Apellidos" id="surname">
                     </div>
                     <br>
                     <div class="group">
                         <label for="">Telefono</label> <br>
-                        <input type="text" placeholder="Ejem: (+34)922123123">
+                        <input type="text" placeholder="Ejem: (+34)922123123" id="tlf">
                     </div>
                     <div class="group">
                         <label for="">Codigo Postal</label> <br>
-                        <input type="text" placeholder="38XXX">
+                        <input type="text" placeholder="38XXX" id="cp">
                     </div>
                     <br>
                     <div class="group">
                         <label for="">DNI/NIE</label> <br>
                         <select name="" id="">
                         </select>
-                        <input type="text" name="" id="" placeholder="DNI / NIE">
+                        <input type="text" placeholder="DNI / NIE" name="" id="nie">
                     </div>
                     <div class="group">
                         <label for="">Crear cuenta como:</label> <br>
-                        <input type="radio" name="" id=""> Particular
-                        <input type="radio" name="" id=""> Empresa
+                        <input type="radio" name="accType" id=""> Particular
+                        <input type="radio" name="accType" id=""> Empresa
                     </div>
                     <div class="group">
                         <label for="">Año de nacimiento</label> <br>
-                        <select name="" id=""></select>
+                        <select name="" id="birthYear"></select>
                     </div>
                     <br>
                     <div class="group">
                         <label for="">Eligie tus aficiones:</label> <br>
-                        <input type="checkbox" name="" id="">Musica
-                        <input type="checkbox" name="" id="">Deporte
-                        <input type="checkbox" name="" id="">Video Juegos
+                        <input type="checkbox" name="aficiones" id="">Musica
+                        <input type="checkbox" name="aficiones" id="">Deporte
+                        <input type="checkbox" name="aficiones" id="">Video Juegos
                         <br>
-                        <input type="checkbox" name="" id="">Manualidades
-                        <input type="checkbox" name="" id="">Artes
-                        <input type="checkbox" name="" id="">Lectura
+                        <input type="checkbox" name="aficiones" id="">Manualidades
+                        <input type="checkbox" name="aficiones" id="">Artes
+                        <input type="checkbox" name="aficiones" id="">Lectura
                     </div>
                 </div>
 
                 <div>
                     <h3>Datos Publicacion</h3>
-
+                    <div class="underline"></div>
                     <div class="group">
                         <label for="">Titulo</label> <br>
-                        <input type="text" name="" id="" placeholder="Titulo">
+                        <input type="text" name="" id="title" placeholder="Titulo">
                     </div>
                     <br>
                     <div class="group">
                         <label for="">Descripcion</label> <br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="" id="longdesc" cols="30" rows="10"></textarea>
+                    </div>
+                    <br>
+                    <div class="group">
+                        <!-- Valora tu contenido-->
+                    </div>
+                    <br>
+                    <div class="group">
+                        <!-- Introduce tu canal -->
                     </div>
                 </div>
+
+                <div>
+                    <button type="submit"></button>
+                </div>
             </form>
+        </section>
+        <section class="resultSection">
+            <div>
+            </div>
         </section>
     </main>
 </body>
