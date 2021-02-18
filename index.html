@@ -19,11 +19,11 @@
                     <div class="underline"></div>
                     <div class="group">
                         <label for="">Nombre de Usuario</label> <br>
-                        <input type="text" placeholder="UserName" id="userName">
+                        <input type="text" placeholder="UserName" id="userName" required>
                     </div>
                     <div class="group">
                         <label for="">Contraseña</label> <br>
-                        <input type="text" placeholder="Introduce Contraseña" id="pwd">
+                        <input type="text" placeholder="Introduce Contraseña" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Introduce una contraseña correcta (Debe contener al menos un numero, una mayuscula, minuscula y 8 o mas letras" required>
                     </div>
                     <br>
                     <input type="checkbox" name="" id="showPwd">Mostrar contraseña
@@ -34,32 +34,32 @@
                     <div class="underline"></div>
                     <div class="group">
                         <label for="">Nombre</label> <br>
-                        <input type="text" placeholder="Nombre" id="name">
+                        <input type="text" placeholder="Nombre" id="name" required>
                     </div>
                     <div class="group">
                         <label for="">Apellidos</label> <br>
-                        <input type="text" placeholder="Apellidos" id="surname">
+                        <input type="text" placeholder="Apellidos" id="surname" required>
                     </div>
                     <br>
                     <div class="group">
                         <label for="">Telefono</label> <br>
-                        <input type="text" placeholder="Ejem: (+34)922123123" id="tlf">
+                        <input type="text" placeholder="Ejem: (+34)922123123" id="tlf" required>
                     </div>
                     <div class="group">
                         <label for="">Codigo Postal</label> <br>
-                        <input type="text" placeholder="38XXX" id="cp">
+                        <input type="text" placeholder="38XXX" id="cp" required>
                     </div>
                     <br>
                     <div class="group">
                         <label for="">DNI/NIE</label> <br>
                         <select name="" id="">
                         </select>
-                        <input type="text" placeholder="DNI / NIE" name="" id="nie">
+                        <input type="text" placeholder="DNI / NIE" name="" id="nie" required>
                     </div>
                     <div class="group">
                         <label for="">Crear cuenta como:</label> <br>
-                        <input type="radio" name="accType" id=""> Particular
-                        <input type="radio" name="accType" id=""> Empresa
+                        <input type="radio" name="accType" id="particular" value="" alt="particular"> Particular
+                        <input type="radio" name="accType" id="empresa" value=""> Empresa
                     </div>
                     <div class="group">
                         <label for="">Año de nacimiento</label> <br>
@@ -68,13 +68,13 @@
                     <br>
                     <div class="group">
                         <label for="">Eligie tus aficiones:</label> <br>
-                        <input type="checkbox" name="aficiones" id="">Musica
-                        <input type="checkbox" name="aficiones" id="">Deporte
-                        <input type="checkbox" name="aficiones" id="">Video Juegos
+                        <input type="checkbox" name="aficiones" id="" value="musica">Musica
+                        <input type="checkbox" name="aficiones" id="" value="deporte">Deporte
+                        <input type="checkbox" name="aficiones" id="" value="videojuegos">Video Juegos
                         <br>
-                        <input type="checkbox" name="aficiones" id="">Manualidades
-                        <input type="checkbox" name="aficiones" id="">Artes
-                        <input type="checkbox" name="aficiones" id="">Lectura
+                        <input type="checkbox" name="aficiones" id="" value="manualidades">Manualidades
+                        <input type="checkbox" name="aficiones" id="" value="artes">Artes
+                        <input type="checkbox" name="aficiones" id="" value="lectura">Lectura
                     </div>
                 </div>
 
@@ -83,12 +83,12 @@
                     <div class="underline"></div>
                     <div class="group">
                         <label for="">Titulo</label> <br>
-                        <input type="text" name="" id="title" placeholder="Titulo">
+                        <input type="text" name="" id="title" placeholder="Titulo" required>
                     </div>
                     <br>
                     <div class="group">
                         <label for="">Descripcion</label> <br>
-                        <textarea name="" id="longdesc" cols="30" rows="10"></textarea>
+                        <textarea name="" id="longdesc" cols="30" rows="10" required></textarea>
                     </div>
                     <br>
                     <div class="group">
@@ -101,7 +101,7 @@
                 </div>
 
                 <div>
-                    <button type="submit" id="submitBtn">Enviar</button>
+                    <button type="submit" id="submitBtn" onclick="sConsole()">Enviar</button>
                 </div>
             </form>
         </section>

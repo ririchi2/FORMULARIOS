@@ -15,23 +15,74 @@ var longdesc = document.getElementById("longdesc").value;
 var resultSection = document.getElementsByClassName("resultSection")[0];
 var submitBtn = document.getElementById("submitBtn");
 
-submitBtn.addEventListener("click", alert("hola"), false);
 
-function sConsole(evento) {
-    evento.preventDefault();
+// if(document.forms.length>0){
+//     for(var i=0; i < document.forms[0].elements.length; i++)
+//     {var campo = document.forms[0].elements[i];
+//         if(campo.type!="hidden")
+//         {      
+//             campo.focus();
+//             break;
+//         }}}
+
+function checkpwd(pwd) {
+    var repwd = /^\d[a-z][A-Z].{8,}/;
+    if (repwd.test(pwd) != true) {
+        console.log("Introduce una contraseña correcta (Debe contener al menos un numero, una mayuscula, minuscula y 8 o mas letras");
+    } else {
+        console.log(pwd);
+    }
+}
+function checktlf(tlf) {
+    var retlf = /^\d{9}$/;
+    if (retlf.test(tlf) != true) {
+        console.log("Introduce un telefono correcto");
+    } else {
+        console.log(tlf);
+    }
+}
+function checkpostal(cp) { 
+    var re5digit=/^\d{5}$/;
+    if (re5digit.test(cp) != true) {
+        console.log("Introduce un número de 5 dígitos");
+    } else {
+        console.log(cp);
+    }
+}
+function checknie(nie) {
+    var renie =/(^([0-9]{7,8}\-[A-Z]))$/;
+    if (renie.test(nie) != true) {
+        console.log("Introduce un DNI correcto");
+    } else {
+        console.log(nie);
+    }
+}
+
+
+function sConsole() {
     console.log(userName);
-    console.log(pwd);
+    checkpwd(pwd);
+    // console.log(pwd);
     console.log(namee);
     console.log(surname);
-    console.log(tlf);
-    console.log(cp);
-    console.log(nie);
-    console.log(accType);
-    // console.log(birthYear);
-    for (var itr = 0; i < aficiones.length; i++) {
-        console.log("elemento: " + aficiones[itr].value + "\n seleccionado: " + aficiones[itr].checked);
+    checktlf(tlf);
+    // console.log(tlf);
+    checkpostal(cp);
+    // console.log(cp);
+    checknie(nie);
+    // console.log(nie);
+    // console.log(accType);
+    for (var itr = 0; itr < accType.length; itr++) {
+        if (accType[itr].checked == true) {
+            console.log(accType[itr].alt);
+        }
+        // console.log("elemento: " + accType[itr].value + "\n seleccionado: " + accType[itr].checked);
     }
-    console.log(aficiones);
+    // console.log(birthYear);
+    // for (var itr = 0; itr < aficiones.length; itr++) {
+    //     console.log("elemento: " + aficiones[itr].value + "\n seleccionado: " + aficiones[itr].checked);
+    // }
+    // console.log(aficiones);
     console.log(title);
     console.log(longdesc);
   }
