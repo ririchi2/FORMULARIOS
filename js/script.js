@@ -1,5 +1,5 @@
 
-// Asignacion de variables para cada input
+// Asignacion de variables HTML
 var userName = document.getElementById("userName");
 var pwd = document.getElementById("pwd");
 var name = document.getElementById("name");
@@ -12,3 +12,4 @@ var birthYear = document.getElementById("birthYear");
 var aficiones = document.getElementsByName("aficiones");
 var title = document.getElementById("title");
 var longdesc = document.getElementById("longdesc");
+var resultSection = document.getElementsByClassName("resultSection")[0];
